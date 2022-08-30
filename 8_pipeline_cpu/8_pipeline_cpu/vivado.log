@@ -1,0 +1,254 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 19 11:54:25 2021
+# Process ID: 12680
+# Current directory: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13016 D:\Projects\course\local\8_pipeline_cpu\8_pipeline_cpu\8_pipeline_cpu.xpr
+# Log file: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/vivado.log
+# Journal file: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.xpr
+INFO: [Project 1-313] Project file moved from '/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Projects/course/local/8_pipeline_cpu/inst_rom.dcp', nor could it be found using path 'D:/home/innovril/vivado1/8_pipeline_cpu/inst_rom.dcp'.
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/8_pipeline_cpu/inst_rom.dcp
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Projects/course/local/8_pipeline_cpu/data_ram.dcp', nor could it be found using path 'D:/home/innovril/vivado1/8_pipeline_cpu/data_ram.dcp'.
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/8_pipeline_cpu/data_ram.dcp
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/Projects/course/local/lcd_module.dcp', nor could it be found using path 'D:/home/innovril/vivado1/lcd_module.dcp'.
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/lcd_module.dcp
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/8_pipeline_cpu/inst_rom.dcp
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/8_pipeline_cpu/data_ram.dcp
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/lcd_module.dcp
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/8_pipeline_cpu/inst_rom.dcp
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/8_pipeline_cpu/data_ram.dcp
+WARNING: [Project 1-865] Could not find the file D:/Projects/course/local/lcd_module.dcp
+INFO: [Project 1-230] Project '8_pipeline_cpu.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Tools/work/Xilinx/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+add_files D:/Projects/course/local/8_pipeline_cpu/lcd_module.dcp
+add_files {D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci D:/Projects/course/local/8_pipeline_cpu/data/data_ram.xci}
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 789.961 ; gain = 39.547
+export_ip_user_files -of_objects  [get_files  {D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci D:/Projects/course/local/8_pipeline_cpu/data/data_ram.xci}] -lib_map_path [list {modelsim=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/modelsim} {questa=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/questa} {riviera=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/riviera} {activehdl=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Projects/course/local/lcd_module.dcp] -no_script -reset -force -quiet
+remove_files  D:/Projects/course/local/lcd_module.dcp
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'data_ram'...
+ERROR: [IP_Flow 19-3478] Validation failed for parameter 'Coe File(Coe_File)' with value '../../../../../inst_multicycle.coe' for IP 'inst_rom'. Invalid COE File- Unable to open the file 
+INFO: [IP_Flow 19-3438] Customization errors found on 'inst_rom'. Restoring to previous valid configuration.
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to customize IP 'inst_rom'. Failed to apply user parameter values.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_pipeline.coe' provided. It will be converted relative to IP Instance files '../../../../../inst/inst_pipeline.coe'
+set_property -dict [list CONFIG.Coe_File {d:/Projects/course/local/8_pipeline_cpu/inst/inst_pipeline.coe}] [get_ips inst_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_pipeline.coe' provided. It will be converted relative to IP Instance files 'inst_pipeline.coe'
+generate_target all [get_files  D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_rom'...
+export_ip_user_files -of_objects [get_files D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci]
+launch_runs -jobs 4 inst_rom_synth_1
+[Wed May 19 11:55:52 2021] Launched inst_rom_synth_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/inst_rom_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci] -directory D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files -ipstatic_source_dir D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/modelsim} {questa=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/questa} {riviera=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/riviera} {activehdl=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse d:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci
+CRITICAL WARNING: [IP_Flow 19-3389] Failed to import IP file 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci': IP name 'inst_rom' is already in use in this project.  Please choose a different name.
+
+CRITICAL WARNING: [Vivado 12-1464] The source file 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci' cannot be added to the fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files D:/Projects/course/local/8_pipeline_cpu/inst_rom.dcp] -no_script -reset -force -quiet
+remove_files  D:/Projects/course/local/8_pipeline_cpu/inst_rom.dcp
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 19 11:57:43 2021] Launched synth_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/synth_1/runme.log
+[Wed May 19 11:57:43 2021] Launched impl_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+export_ip_user_files -of_objects  [get_files D:/Projects/course/local/8_pipeline_cpu/data_ram.dcp] -no_script -reset -force -quiet
+remove_files  D:/Projects/course/local/8_pipeline_cpu/data_ram.dcp
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 19 11:58:51 2021] Launched data_ram_synth_1, synth_1...
+Run output will be captured here:
+data_ram_synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/data_ram_synth_1/runme.log
+synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/synth_1/runme.log
+[Wed May 19 11:58:51 2021] Launched impl_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+export_ip_user_files -of_objects  [get_files D:/Projects/course/local/8_pipeline_cpu/data/data_ram.xci] -no_script -reset -force -quiet
+remove_files  -fileset data_ram D:/Projects/course/local/8_pipeline_cpu/data/data_ram.xci
+INFO: [Project 1-386] Moving file 'D:/Projects/course/local/8_pipeline_cpu/data/data_ram.xci' from fileset 'data_ram' to fileset 'sources_1'.
+add_files -norecurse D:/Projects/course/local/8_pipeline_cpu/data/data_ram.xci
+WARNING: [IP_Flow 19-3664] IP 'data_ram' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/data/data_ram_ooc.xdc'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'data_ram' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/data/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'data_ram' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/data/synth/data_ram.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'data_ram' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/data/data_ram.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'data_ram' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/data/data_ram_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'data_ram' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/data/data_ram_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'data_ram' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/data/data_ram_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'data_ram' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/data/data_ram_sim_netlist.vhdl'. Please regenerate to continue.
+export_ip_user_files -of_objects  [get_files  D:/Projects/course/local/8_pipeline_cpu/data/data_ram.xci] -lib_map_path [list {modelsim=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/modelsim} {questa=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/questa} {riviera=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/riviera} {activehdl=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run inst_rom_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'data_ram'...
+[Wed May 19 12:00:20 2021] Launched inst_rom_synth_1, data_ram_synth_1, synth_1...
+Run output will be captured here:
+inst_rom_synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/inst_rom_synth_1/runme.log
+data_ram_synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/data_ram_synth_1/runme.log
+synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/synth_1/runme.log
+[Wed May 19 12:00:21 2021] Launched impl_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/impl_1/runme.log
+export_ip_user_files -of_objects  [get_files D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci] -no_script -reset -force -quiet
+remove_files  -fileset inst_rom D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci
+INFO: [Project 1-386] Moving file 'D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci' from fileset 'inst_rom' to fileset 'sources_1'.
+export_ip_user_files -of_objects  [get_files d:/inst_multicycle.coe] -no_script -reset -force -quiet
+remove_files  d:/inst_multicycle.coe
+add_files -norecurse D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.vho'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.veo'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom_ooc.xdc'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.mif'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/synth/inst_rom.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.mif'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/simulation/blk_mem_gen_v8_4.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/sim/inst_rom.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/summary.log'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/misc/blk_mem_gen_v8_4.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/doc/blk_mem_gen_v8_4_changelog.txt'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'inst_rom' generated file not found 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-2162] IP 'inst_rom' is locked:
+* IP file 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xml' for IP 'inst_rom' contains stale content.
+export_ip_user_files -of_objects  [get_files  D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci] -lib_map_path [list {modelsim=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/modelsim} {questa=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/questa} {riviera=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/riviera} {activehdl=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/activehdl}] -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  inst_rom] -log ip_upgrade.log
+Upgrading 'inst_rom'
+WARNING: [IP_Flow 19-4050] The normal upgrade process failed due to validation failures in the given configuration. Attempting partial upgrade to set as many user parameters as possible. Please check the parameters whose values were not applied.
+WARNING: [IP_Flow 19-3932] Unable to set the value 'true' on parameter 'Load Init File' due to the following failure - 
+Validation failed for parameter 'Coe File(Coe_File)' with value 'no_coe_file_loaded' for IP 'inst_rom'. No COE file loaded
+. Restoring to an old valid value of 'false'
+WARNING: [IP_Flow 19-3501] Upgraded inst_rom from Block Memory Generator 8.4 to Block Memory Generator 8.4, with warnings. Please review the message log.
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_rom'...
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'inst_rom' has identified issues that may require user intervention. Please review the upgrade log 'd:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips inst_rom] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_rom'...
+export_ip_user_files -of_objects [get_files D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci]
+launch_runs -jobs 4 inst_rom_synth_1
+[Wed May 19 13:09:53 2021] Launched inst_rom_synth_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/inst_rom_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci] -directory D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files -ipstatic_source_dir D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/modelsim} {questa=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/questa} {riviera=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/riviera} {activehdl=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 19 13:10:00 2021] Launched inst_rom_synth_1, synth_1...
+Run output will be captured here:
+inst_rom_synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/inst_rom_synth_1/runme.log
+synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/synth_1/runme.log
+[Wed May 19 13:10:00 2021] Launched impl_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 982.367 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210251A08870
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2180.402 ; gain = 1198.035
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/impl_1/pipeline_cpu_display.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2227.719 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_pipeline.coe' provided. It will be converted relative to IP Instance files '../../../../../inst/inst_pipeline.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_pipeline.coe' provided. It will be converted relative to IP Instance files '../../../../../inst/inst_pipeline.coe'
+set_property -dict [list CONFIG.Load_Init_File {true} CONFIG.Coe_File {D:/Projects/course/local/8_pipeline_cpu/inst/inst_pipeline.coe}] [get_ips inst_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'd:/Projects/course/local/8_pipeline_cpu/inst/inst_pipeline.coe' provided. It will be converted relative to IP Instance files 'inst_pipeline.coe'
+generate_target all [get_files  D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'inst_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'inst_rom'...
+export_ip_user_files -of_objects [get_files D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci] -no_script -sync -force -quiet
+reset_run inst_rom_synth_1
+launch_runs -jobs 4 inst_rom_synth_1
+[Wed May 19 13:15:29 2021] Launched inst_rom_synth_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/inst_rom_synth_1/runme.log
+export_simulation -of_objects [get_files D:/Projects/course/local/8_pipeline_cpu/inst/inst_rom.xci] -directory D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files/sim_scripts -ip_user_files_dir D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files -ipstatic_source_dir D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/modelsim} {questa=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/questa} {riviera=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/riviera} {activehdl=D:/home/innovril/vivado1/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 19 13:15:41 2021] Launched inst_rom_synth_1, synth_1...
+Run output will be captured here:
+inst_rom_synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/inst_rom_synth_1/runme.log
+synth_1: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/synth_1/runme.log
+[Wed May 19 13:15:41 2021] Launched impl_1...
+Run output will be captured here: D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {D:/Projects/course/local/8_pipeline_cpu/8_pipeline_cpu/8_pipeline_cpu.runs/impl_1/pipeline_cpu_display.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2244.562 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a200t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210251A08870
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 19 13:19:16 2021...

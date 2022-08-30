@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"d:/Projects/course/local/8_pipeline_cpu/data/data_ram_sim_netlist.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

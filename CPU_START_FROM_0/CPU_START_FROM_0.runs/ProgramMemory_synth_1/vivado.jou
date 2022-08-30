@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr 30 22:49:26 2020
+# Process ID: 22384
+# Current directory: C:/Users/yufan lu/OneDrive/Vivado Projects/CPU_START_FROM_0/CPU_START_FROM_0.runs/ProgramMemory_synth_1
+# Command line: vivado.exe -log ProgramMemory.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ProgramMemory.tcl
+# Log file: C:/Users/yufan lu/OneDrive/Vivado Projects/CPU_START_FROM_0/CPU_START_FROM_0.runs/ProgramMemory_synth_1/ProgramMemory.vds
+# Journal file: C:/Users/yufan lu/OneDrive/Vivado Projects/CPU_START_FROM_0/CPU_START_FROM_0.runs/ProgramMemory_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ProgramMemory.tcl -notrace

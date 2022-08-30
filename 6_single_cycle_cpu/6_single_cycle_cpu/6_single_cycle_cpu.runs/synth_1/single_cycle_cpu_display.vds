@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec 21 08:33:15 2021
+# Process ID: 12352
+# Current directory: D:/CPu/6_single_cycle_cpu/6_single_cycle_cpu/6_single_cycle_cpu.runs/synth_1
+# Command line: vivado.exe -log single_cycle_cpu_display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_cycle_cpu_display.tcl
+# Log file: D:/CPu/6_single_cycle_cpu/6_single_cycle_cpu/6_single_cycle_cpu.runs/synth_1/single_cycle_cpu_display.vds
+# Journal file: D:/CPu/6_single_cycle_cpu/6_single_cycle_cpu/6_single_cycle_cpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source single_cycle_cpu_display.tcl -notrace
+Command: synth_design -top single_cycle_cpu_display -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15412 
+WARNING: [Synth 8-6901] identifier 'rs_value' is used before its declaration [D:/CPu/6_single_cycle_cpu/single_cycle_cpu.v:116]
+WARNING: [Synth 8-6901] identifier 'rt_value' is used before its declaration [D:/CPu/6_single_cycle_cpu/single_cycle_cpu.v:116]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 894.410 ; gain = 240.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_cycle_cpu_display' [D:/CPu/6_single_cycle_cpu/single_cycle_cpu_display.v:8]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [J:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1085]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: ULTRASCALE - type: string 
+	Parameter STARTUP_SYNC bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCE' (1#1) [J:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1085]
+INFO: [Synth 8-6157] synthesizing module 'single_cycle_cpu' [D:/CPu/6_single_cycle_cpu/single_cycle_cpu.v:10]
+INFO: [Synth 8-6157] synthesizing module 'inst_rom' [D:/CPu/6_single_cycle_cpu/inst_rom.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'inst_rom' (2#1) [D:/CPu/6_single_cycle_cpu/inst_rom.v:9]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/CPu/6_single_cycle_cpu/regfile.v:8]
+WARNING: [Synth 8-6014] Unused sequential element rf_reg[0] was removed.  [D:/CPu/6_single_cycle_cpu/regfile.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (3#1) [D:/CPu/6_single_cycle_cpu/regfile.v:8]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/CPu/6_single_cycle_cpu/alu.v:8]
+INFO: [Synth 8-6157] synthesizing module 'adder' [D:/CPu/6_single_cycle_cpu/adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (4#1) [D:/CPu/6_single_cycle_cpu/adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (5#1) [D:/CPu/6_single_cycle_cpu/alu.v:8]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [D:/CPu/6_single_cycle_cpu/data_ram.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (6#1) [D:/CPu/6_single_cycle_cpu/data_ram.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'single_cycle_cpu' (7#1) [D:/CPu/6_single_cycle_cpu/single_cycle_cpu.v:10]
+INFO: [Synth 8-6157] synthesizing module 'lcd_module' [D:/CPu/6_single_cycle_cpu/6_single_cycle_cpu/6_single_cycle_cpu.runs/synth_1/.Xil/Vivado-12352-个人电脑/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_module' (8#1) [D:/CPu/6_single_cycle_cpu/6_single_cycle_cpu/6_single_cycle_cpu.runs/synth_1/.Xil/Vivado-12352-个人电脑/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'single_cycle_cpu_display' (9#1) [D:/CPu/6_single_cycle_cpu/single_cycle_cpu_display.v:8]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[31]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[30]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[29]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[28]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[27]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[26]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[25]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[24]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[23]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[22]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[21]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[20]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[19]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[18]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[17]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[16]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[15]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[14]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[13]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[12]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[11]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[10]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[9]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[8]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[7]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[1]
+WARNING: [Synth 8-3331] design single_cycle_cpu has unconnected port mem_addr[0]

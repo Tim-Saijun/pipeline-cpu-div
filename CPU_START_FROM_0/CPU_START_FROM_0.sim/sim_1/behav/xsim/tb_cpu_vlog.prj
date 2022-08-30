@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CPU_START_FROM_0.srcs/sources_1/ip/ProgramMemory/sim/ProgramMemory.v" \
+"../../../../CPU_START_FROM_0.srcs/sources_1/new/ALU.v" \
+"../../../../CPU_START_FROM_0.srcs/sources_1/new/CPU.v" \
+"../../../../CPU_START_FROM_0.srcs/sources_1/new/CalPart.v" \
+"../../../../CPU_START_FROM_0.srcs/sources_1/new/MemoryPart.v" \
+"../../../../CPU_START_FROM_0.srcs/sources_1/new/RF.v" \
+"../../../../CPU_START_FROM_0.srcs/sim_1/new/tb_cpu.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
